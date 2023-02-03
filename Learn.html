@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <link rel="stylesheet" href="Learn.css">
+</head>
+
+<body>
+    <div class="demo01">
+        <h4 id="top">段落文字</h4>
+        consenter adipisicing <strong>Lorem</strong> <del>ipsum</del> <u>dolor</u> <em>dolor</em> amet elit. Sint
+        perspiciatis <div class="pic"><img src="images/tx.png" alt="加载失败" title="头像"></div> hic rerum <a
+            href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">百度</a> quos <a href="LearnMarkdown.md"
+            target="_blank" rel="noopener noreferrer">LearnMarkdown</a>, quisquam <a href="#">空链接</a> <a
+            href="#top">锚点链接</a> dicta, &nbsp;&nbsp;&lt;p&gt; architecto harum velit soluta nostrum voluptas incidunt
+        libero lilo!
+    </div>
+    <div class="demo02">
+        <h4>表格Table</h4>
+        <table class="tb1" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>男</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>男</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>女</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+            <table class="tb2" cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                </tbody>
+            </table>
+    </div>
+    <div class="demo03">
+        <h4>列表</h4>
+        <ul>
+            <li>sss</li>
+            <li>sss</li>
+            <li>sss</li>
+        </ul>
+        <ol>
+            <li>sss</li>
+            <li>sss</li>
+            <li>sss</li>
+        </ol>
+        <dl>
+            <dt>hhh</dt>
+            <dd>sss</dd>
+            <dd>sss</dd>
+        </dl>
+    </div>
+    <div class="demo04">
+        <h4>表单</h4>
+        <form action="demo.php" method="post" name="text1">
+            <table cellspacing="0">
+                <tr>
+                    <td>用户名：</td>
+                    <td>
+                        <input type="text" name="username" value="请输入用户名" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td>
+                        <input type="password" name="psd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>
+                        <label for="nan">男</label>
+                        <input type="radio" id="nan" name="sex" value="男" checked="checked">
+                        <label for="nv">女</label>
+                        <input type="radio" id="nv" name="sex" value="女">
+                    </td>
+                </tr>
+                <tr>
+                    <td>爱好：</td>
+                    <td>
+                        <label for="eat">吃饭</label>
+                        <input type="checkbox" id="eat" name="hobby" value="吃饭" checked="checked">
+                        <label for="sleep">睡觉</label>
+                        <input type="checkbox" id="sleep" name="hobby" value="睡觉">
+                        <label for="beat">打豆豆</label>
+                        <input type="checkbox" id="beat" name="hobby" value="打豆豆">
+                    </td>
+                </tr>
+                <tr>
+                    <td>文本域：</td>
+                    <td>
+                        <textarea name="" id="" cols="20" rows="1">Hello! Word.</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>选择框</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="" selected>浙江</option>
+                            <option value="">重庆</option>
+                            <option value="">上海</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">上传：（文件上传单行显示⬆）</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="立即注册">
+                    </td>
+                    <td>
+                        <input type="reset" value="重新设置">
+                        <input type="button" value="短信验证码">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="demo05">
+        <h4>文字文本样式</h4>
+        <h6>font字体：</h6>
+        <p class="font1">Lorem ipsum dolor sit amet consectetur,</p>
+        <h6>文本样式:</h6>
+        <p class="font2">Ea laborum laboriosam voluptatem eaque?</p>
+        <div class="pic"><img src="images/pic1.png" alt=""></div>
+    </div>
+    <div class="demo06">
+        <h4>伪类选择器</h4>
+        <a href="#">a的伪类链接</a>
+        <h6>Tips(顺序：link,visited,hover,action)</h6>
+        <input type="text" value="input的focus伪类">
+    </div>
+    <div class="demo07">
+        <h4>块元素行内元素和行内块元素</h4>
+        <h6>块元素</h6>
+        <p>&lt;h1&gt;~&lt;h6&gt;&lt;p&gt;&lt;div&gt;&lt;ul&gt;&lt;ol&gt;&lt;li&gt;</p>
+        <p>特点：独占一行，可设置宽高</p>
+        <h6>行内元素</h6>
+        <p>&lt;a&gt;&lt;strong&gt;&lt;em&gt;&lt;del&gt;&lt;u&gt;&lt;span&gt;&lt;i&gt;&lt;ins&gt;&lt;s&gt;&lt;b&gt;</p>
+        <p>特点：相邻元素一行内，无法直接设置宽高，用于防止文本和其他行内元素</p>
+        <h6>行内块元素</h6>
+        <p>&lt;img&gt;&lt;input&gt;&lt;td&gt;</p>
+        <p>特点：相邻元素一行内，可设置宽高</p>
+    </div>
+    <div class="demo08">
+        <h4>display元素转换</h4>
+        <a href="#">手机 电话卡</a>
+        <a href="#">电视 盒子</a>
+        <a href="#">笔记本 平板</a>
+        <a href="#">出行 穿戴</a>
+        <a href="#">智能 路由器</a>
+        <a href="#">健康 儿童</a>
+        <a href="#">耳机 音响</a>
+    </div>
+    <div class="demo09">
+        <h4>背景图片位置</h4>
+        <div class="pic">
+            Hallo World！
+        </div>
+        <h4>五彩导航栏</h4>
+        <div class="box1">
+            <a href="#" class="pg1">导航栏</a>
+            <a href="#" class="pg2">导航栏</a>
+            <a href="#" class="pg3">导航栏</a>
+            <a href="#" class="pg4">导航栏</a>
+        </div>
+        <h4>微博导航栏</h4>
+        <div class="box2">
+            <a href="#">导航栏</a>
+            <a href="#">导航栏</a>
+            <a href="#">导航栏</a>
+            <a href="#">导航栏</a>
+        </div>
+    </div>
+    <div class="demo10">
+        <h4>外边距合并</h4>
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <p>解决：只给一个盒子设外边距</p>
+    </div>
+    <div class="demo11">
+        <h4>嵌套元素塌陷</h4>
+        <div class="box">
+            <div class="box1">
+                <div class="box2"></div>
+            </div>
+        </div>
+        <p>解决：父盒子加边框，或加内边距，或加overflow：hidden</p>
+    </div>
+    <div class="demo12">
+        <h4>产品模块</h4>
+        <div class="box">
+            <img src="images/bj3.jpg" alt="">
+            <p class="review">快递牛，整体不错蓝牙可以说秒连。红米给力</p>
+            <div class="appraise">
+                117384232评价
+            </div>
+            <div class="info">
+                <h4>AirDots... </h4>
+                <em>|</em>
+                <span>99.9元</span>
+            </div>
+        </div>
+    </div>
+    <div class="demo13">
+        <h4>快报模块</h4>
+        <div class="box">
+            <h5>品优购快报</h5>
+            <ul>
+                <li><a href="#">【特惠】爆款耳机5折秒！</a></li>
+                <li><a href="#">【特惠】母亲节，健康好礼低至5折！</a></li>
+                <li><a href="#">【特惠】爆款耳机5折秒！</a></li>
+                <li><a href="#">【特惠】9.9元洗100张照片！</a></li>
+                <li><a href="#">【特惠】长虹智能空调立省1000</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="demo14">
+        <h4>圆角边框</h4>
+        <div class="radio1"></div>
+        <div class="radio2"></div>
+        <div class="radio3"></div>
+        <h4>盒子阴影</h4>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <h4>文字阴影</h4>
+        <p>Hello World！</p>
+    </div>
+    <div class="demo15">
+        <h4>浮动具有行内块特性</h4>
+        <p>Hello World</p>
+    </div>
+    <div class="demo16">
+        <h4></h4>
+    </div>
+    <div class="demo17">
+        <h4></h4>
+    </div>
+    <div class="demo18">
+        <h4></h4>
+    </div>
+    <div class="demo19">
+        <h4></h4>
+    </div>
+</body>
+
+</html>

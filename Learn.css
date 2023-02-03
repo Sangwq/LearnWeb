@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.demo01,
+.demo02,
+.demo03,
+.demo04,
+.demo05,
+.demo06,
+.demo07,
+.demo08,
+.demo09,
+.demo10,
+.demo11,
+.demo12,
+.demo13,
+.demo14,
+.demo15,
+.demo16,
+.demo17,
+.demo18,
+.demo19 {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+li {
+    list-style: none;
+}
+h4 {
+    margin-bottom: 10px;
+}
+
+/* demo01 */
+.demo01 .pic {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.demo01 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* demo02 */
+.tb1,
+.tb2 {
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+table,
+table th,
+table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+/* demo03 */
+.demo03 ul,
+.demo03 ol,
+.demo03 dl {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+/* demo04 */
+.demo04 table {
+    width: 100%;
+    height: 220px;
+}
+
+.demo04 table td {
+    border: 0;
+}
+/* demo05  */
+.demo05 .font1 {
+    font: italic 700 16px/20px 'Microsoft yahei';
+}
+.demo05 .font2 {
+    color: #646c8a;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 20px;
+    text-decoration: underline;
+}
+.demo05 .pic {
+    width: 100%;
+}
+.demo05 img {
+    width: 100%;
+    height: 50px;
+}
+/* demo06开始 */
+
+.demo06 a:link {
+    color: #646c8a;
+    text-decoration: none;
+}
+.demo06 a:visited {
+    color: black;
+}
+.demo06 a:hover {
+    color: blue;
+}
+.demo06 a:active {
+    color: red;
+}
+.demo06 input {
+    margin-top: 15px;
+}
+.demo06 input:focus {
+    background-color: pink;
+    color: blue;
+}
+
+/* demo7开始 */
+
+.demo07 p {
+    font-size: 12px;
+}
+/* demo08开始 */
+.demo08 a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    width: 170px;
+    margin: 0 auto;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.demo08 a:hover {
+    color: #fff;
+    background-color: #fe6700;
+}
+/* demo09开始 */
+.demo09 .pic {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 25px;
+    margin: 0 auto;
+    background: url(images/bj1.jpg) no-repeat left pink;
+    background-size: 25px 25px;
+}
+.demo09 .box1 a {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: pink;
+}
+.demo09 .pg1 {
+    background: url(images/bg1.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg2 {
+    background: url(images/bg2.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg3 {
+    background: url(images/bg3.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg4 {
+    background: url(images/bg4.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg1:hover {
+    background: url(images/bg11.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg2:hover {
+    background: url(images/bg22.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg3:hover {
+    background: url(images/bg33.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .pg4:hover {
+    background: url(images/bg44.png) no-repeat top ;
+    background-size: 100% 100%;
+}
+.demo09 .box2 {
+    width: 100%;
+    border-top: 3px solid #ff8500;
+    border-bottom: 1px solid #edeef0;
+    height: 41px;
+    background-color: #fcfcfc;
+}
+.demo09 .box2 a {
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    text-decoration: none;
+    color: #4c4c4c;
+    padding: 0 5px;
+}
+.demo09 .box2 a:hover {
+    background-color: #eee;
+    color: #ff8500;
+}
+/* demo10开始 */
+.demo10 .box {
+    border: 1px solid #000;
+    height: 150px;
+    width: 100%;
+}
+.demo10 .box1,
+.demo10 .box2 {
+    height: 30px;
+    background-color: pink;
+}
+.demo10 .box1 {
+    margin-bottom: 10px;
+}
+.demo10 .box2 {
+    margin-top: 20px;
+}
+
+/* demo11开始 */
+
+.demo11 .box {
+    border: 1px solid #000;
+    height: 150px;
+    width: 100%;
+}
+.demo11 .box1 {
+    height: 80px;
+    background-color: pink;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    padding-top: 1px;
+    overflow: hidden;
+}
+
+.demo11 .box2 {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+/* demo12开始 */
+.demo12 {
+    background-color: #f5f5f5;
+}
+.demo12 .box {
+    font-size: 13px;
+    width:150px;
+    height: 220px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.demo12 img {
+    width: 100%;
+}
+.demo12 .review {
+    margin: 10px 8px 0;
+    height: 70px;
+}
+.demo12 .appraise {
+    font-size: 12px;
+    padding: 5px 8px;
+    color: #ccc;
+}
+.demo12 .info {
+    margin: 0 8px 0;
+}
+.demo12 .info h4 {
+    font-weight: 400;
+    display: inline-block;
+}
+.demo12 .info em {
+    margin: 0 5px 0 8px;
+    font-style: normal;
+}
+.demo12 .info span {
+    color: #ff8500;
+}
+/* demo13开始 */
+.demo13 .box {
+    width: 250px;
+    height: 200px;
+    color: #4c4c4c;
+    border: 1px solid #cbcdca;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.demo13 h5 {
+    border-bottom: 1px dotted #cbcdca;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.demo13 li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.demo13 li a {
+    color: #4c4c4c;
+    text-decoration: none;
+}
+.demo13 li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+/* demo14开始 */
+.demo14 .radio1,
+.demo14 .radio2,
+.demo14 .radio3 {
+    width: 50px;
+    height: 26px;
+    background-color: pink;
+    display: inline-block;
+}
+
+.demo14 .radio1 {
+    border-radius: 50%;
+}
+.demo14 .radio2 {
+    border-radius: 13px;
+}
+.demo14 .radio3 {
+    border-radius: 0 50%;
+}
+.demo14 .box1,
+.demo14 .box2 {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    display: inline-block;
+    margin-right: 15px;
+}
+.demo14 .box1 {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .3);
+}
+.demo14 .box2:hover {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .3);
+}
+.demo14 p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff8500;
+    text-shadow: 4px 1px 1px rgba(0, 0, 0, .3);
+}
