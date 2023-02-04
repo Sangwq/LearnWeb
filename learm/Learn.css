@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
 }
-
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 .demo01,
 .demo02,
 .demo03,
@@ -369,3 +379,28 @@ table td {
     color: #ff8500;
     text-shadow: 4px 1px 1px rgba(0, 0, 0, .3);
 }
+/* demo15开始 */
+.demo15 span {
+    float: left;
+    width: 150px;
+    height: 30px;
+    background-color: pink;
+}
+.demo15 .box {
+    width: 200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.demo15 .box1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.demo15 .box2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+/* demo16开始 */
