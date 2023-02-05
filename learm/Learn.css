@@ -2,36 +2,37 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('font/iconfont.woff2?t=1675591392564') format('woff2'),
+        url('font/iconfont.woff?t=1675591392564') format('woff'),
+        url('font/iconfont.ttf?t=1675591392564') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .clearfix::before,
 .clearfix::after {
     content: "";
     display: table;
 }
+
 .clearfix::after {
     clear: both;
 }
+
 .clearfix {
     *zoom: 1;
 }
-.demo01,
-.demo02,
-.demo03,
-.demo04,
-.demo05,
-.demo06,
-.demo07,
-.demo08,
-.demo09,
-.demo10,
-.demo11,
-.demo12,
-.demo13,
-.demo14,
-.demo15,
-.demo16,
-.demo17,
-.demo18,
-.demo19 {
+
+body>div {
     float: left;
     width: 250px;
     height: 250px;
@@ -40,9 +41,11 @@
     font-size: 15px;
     border: 1px solid #000;
 }
+
 li {
     list-style: none;
 }
+
 h4 {
     margin-bottom: 10px;
 }
@@ -92,10 +95,12 @@ table td {
 .demo04 table td {
     border: 0;
 }
+
 /* demo05  */
 .demo05 .font1 {
     font: italic 700 16px/20px 'Microsoft yahei';
 }
+
 .demo05 .font2 {
     color: #646c8a;
     text-align: left;
@@ -103,31 +108,39 @@ table td {
     line-height: 20px;
     text-decoration: underline;
 }
+
 .demo05 .pic {
     width: 100%;
 }
+
 .demo05 img {
     width: 100%;
     height: 50px;
 }
+
 /* demo06开始 */
 
 .demo06 a:link {
     color: #646c8a;
     text-decoration: none;
 }
+
 .demo06 a:visited {
     color: black;
 }
+
 .demo06 a:hover {
     color: blue;
 }
+
 .demo06 a:active {
     color: red;
 }
+
 .demo06 input {
     margin-top: 15px;
 }
+
 .demo06 input:focus {
     background-color: pink;
     color: blue;
@@ -138,6 +151,7 @@ table td {
 .demo07 p {
     font-size: 12px;
 }
+
 /* demo08开始 */
 .demo08 a {
     display: block;
@@ -151,10 +165,12 @@ table td {
     text-decoration: none;
     padding-left: 30px;
 }
+
 .demo08 a:hover {
     color: #fff;
     background-color: #fe6700;
 }
+
 /* demo09开始 */
 .demo09 .pic {
     width: 250px;
@@ -165,6 +181,7 @@ table td {
     background: url(images/bj1.jpg) no-repeat left pink;
     background-size: 25px 25px;
 }
+
 .demo09 .box1 a {
     display: inline-block;
     width: 50px;
@@ -176,38 +193,47 @@ table td {
     color: #fff;
     background-color: pink;
 }
+
 .demo09 .pg1 {
-    background: url(images/bg1.png) no-repeat top ;
+    background: url(images/bg1.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg2 {
-    background: url(images/bg2.png) no-repeat top ;
+    background: url(images/bg2.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg3 {
-    background: url(images/bg3.png) no-repeat top ;
+    background: url(images/bg3.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg4 {
-    background: url(images/bg4.png) no-repeat top ;
+    background: url(images/bg4.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg1:hover {
-    background: url(images/bg11.png) no-repeat top ;
+    background: url(images/bg11.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg2:hover {
-    background: url(images/bg22.png) no-repeat top ;
+    background: url(images/bg22.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg3:hover {
-    background: url(images/bg33.png) no-repeat top ;
+    background: url(images/bg33.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .pg4:hover {
-    background: url(images/bg44.png) no-repeat top ;
+    background: url(images/bg44.png) no-repeat top;
     background-size: 100% 100%;
 }
+
 .demo09 .box2 {
     width: 100%;
     border-top: 3px solid #ff8500;
@@ -215,6 +241,7 @@ table td {
     height: 41px;
     background-color: #fcfcfc;
 }
+
 .demo09 .box2 a {
     display: inline-block;
     height: 100%;
@@ -223,24 +250,29 @@ table td {
     color: #4c4c4c;
     padding: 0 5px;
 }
+
 .demo09 .box2 a:hover {
     background-color: #eee;
     color: #ff8500;
 }
+
 /* demo10开始 */
 .demo10 .box {
     border: 1px solid #000;
     height: 150px;
     width: 100%;
 }
+
 .demo10 .box1,
 .demo10 .box2 {
     height: 30px;
     background-color: pink;
 }
+
 .demo10 .box1 {
     margin-bottom: 10px;
 }
+
 .demo10 .box2 {
     margin-top: 20px;
 }
@@ -252,6 +284,7 @@ table td {
     height: 150px;
     width: 100%;
 }
+
 .demo11 .box1 {
     height: 80px;
     background-color: pink;
@@ -272,39 +305,48 @@ table td {
 .demo12 {
     background-color: #f5f5f5;
 }
+
 .demo12 .box {
     font-size: 13px;
-    width:150px;
+    width: 150px;
     height: 220px;
     background-color: #ffffff;
     margin: 0 auto;
 }
+
 .demo12 img {
     width: 100%;
 }
+
 .demo12 .review {
     margin: 10px 8px 0;
     height: 70px;
 }
+
 .demo12 .appraise {
     font-size: 12px;
     padding: 5px 8px;
     color: #ccc;
 }
+
 .demo12 .info {
     margin: 0 8px 0;
 }
+
 .demo12 .info h4 {
     font-weight: 400;
     display: inline-block;
 }
+
 .demo12 .info em {
     margin: 0 5px 0 8px;
     font-style: normal;
 }
+
 .demo12 .info span {
     color: #ff8500;
 }
+
 /* demo13开始 */
 .demo13 .box {
     width: 250px;
@@ -314,6 +356,7 @@ table td {
     margin: 0 auto;
     font-size: 13px;
 }
+
 .demo13 h5 {
     border-bottom: 1px dotted #cbcdca;
     height: 30px;
@@ -323,6 +366,7 @@ table td {
     font-size: 15px;
     margin-bottom: 8px;
 }
+
 .demo13 li {
     height: 30px;
     line-height: 30px;
@@ -333,10 +377,12 @@ table td {
     color: #4c4c4c;
     text-decoration: none;
 }
+
 .demo13 li a:hover {
     color: blue;
     text-decoration: underline;
 }
+
 /* demo14开始 */
 .demo14 .radio1,
 .demo14 .radio2,
@@ -350,12 +396,15 @@ table td {
 .demo14 .radio1 {
     border-radius: 50%;
 }
+
 .demo14 .radio2 {
     border-radius: 13px;
 }
+
 .demo14 .radio3 {
     border-radius: 0 50%;
 }
+
 .demo14 .box1,
 .demo14 .box2 {
     width: 50px;
@@ -364,21 +413,25 @@ table td {
     display: inline-block;
     margin-right: 15px;
 }
+
 .demo14 .box1 {
     width: 50px;
     height: 50px;
     background-color: pink;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .3);
 }
+
 .demo14 .box2:hover {
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .3);
 }
+
 .demo14 p {
     font-size: 16px;
     font-weight: 700;
     color: #ff8500;
     text-shadow: 4px 1px 1px rgba(0, 0, 0, .3);
 }
+
 /* demo15开始 */
 .demo15 span {
     float: left;
@@ -386,21 +439,250 @@ table td {
     height: 30px;
     background-color: pink;
 }
+
+.demo15 .pink {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
 .demo15 .box {
     width: 200px;
     border: 1px solid #000;
     margin: 0 auto;
 }
+
 .demo15 .box1 {
     float: left;
     width: 50px;
     height: 50px;
     background-color: red;
 }
+
 .demo15 .box2 {
     float: left;
     width: 50px;
     height: 50px;
     background-color: blue;
 }
+
 /* demo16开始 */
+.demo16 {
+    position: relative;
+}
+
+.demo16 .pink {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+.demo16 .red {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.demo16 .yellow {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 80px;
+    height: 40px;
+    background-color: yellow;
+}
+
+.demo16 .box1,
+.demo16 .box2,
+.demo16 .box3 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+
+.demo16 .box1 {
+    bottom: 30px;
+    left: 30px;
+    background-color: red;
+}
+
+.demo16 .box2 {
+    z-index: 1;
+    bottom: 20px;
+    left: 40px;
+    background-color: pink;
+}
+
+.demo16 .box3 {
+    bottom: 10px;
+    left: 50px;
+    background-color: yellow;
+}
+
+.demo17 .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.demo17 .pink {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+
+.demo18 .pink,
+.demo18 .red,
+.demo18 .gray,
+.demo18 .blue {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.demo18 .pink {
+    background-color: pink;
+    display: none;
+}
+
+.demo18 .red {
+    background-color: red;
+}
+
+.demo18 .gray {
+    background-color: gray;
+    visibility: hidden;
+}
+
+.demo18 .blue {
+    background-color: blue;
+}
+
+.demo18 .box1,
+.demo18 .box2 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.demo18 .box1 {
+    overflow: hidden;
+}
+
+.demo18 .box2 {
+    overflow: auto;
+}
+
+.demo19 .sprite {
+    width: 60px;
+    height: 60px;
+    background: url(images/sprites.png) no-repeat -180px 0;
+}
+.demo19 .jd {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+}
+.demo19 .corner {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: red;
+}
+.demo20 .p1 {
+    cursor: default;
+}
+.demo20 .p2 {
+    cursor: pointer;
+}
+.demo20 .p3 {
+    cursor: text;
+}
+.demo20 .p4 {
+    cursor: not-allowed;
+}
+.demo20 .p5 {
+    cursor: move;
+}
+.demo20 input,
+.demo20 textarea {
+    outline: none;
+    margin-bottom: 5px;
+}
+.demo20 textarea {
+    resize: none;
+}
+.demo21>img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.demo21 .box1,
+.demo21 .box2 {
+    display: inline-block;
+    border: 1px solid red;
+}
+.demo21 .box1 img,
+.demo21 .box2 img {
+    width: 50px;
+    height: 50px;
+}
+.demo21 .box2 img {
+    vertical-align: bottom;
+}
+.demo21 .box3 {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.demo22 .first div {
+    float: left;   
+    width: 70px;
+    height: 80px;
+    border: 2px solid #000;
+    margin-left: -2px;
+}
+.demo22 .second div {
+    position: relative;
+    float: left;   
+    width: 70px;
+    height: 80px;
+    border: 2px solid #000;
+    margin-left: -2px;
+}
+.demo22 .second div:hover {
+    position: relative;
+    z-index: 1;
+    border-color: blue;
+}
+.demo23 img {
+    width: 250px;
+}
+.demo23 .corner {
+    width: 0;
+    height: 0;
+    border-width: 30px 15px 0 0;
+    border-color: transparent red transparent transparent;
+    border-style: solid;
+}

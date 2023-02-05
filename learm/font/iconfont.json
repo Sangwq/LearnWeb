@@ -1,0 +1,30 @@
+{
+  "id": "3870030",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33734071",
+      "name": "关键词",
+      "font_class": "guanjianci",
+      "unicode": "e8f5",
+      "unicode_decimal": 59637
+    },
+    {
+      "icon_id": "33734074",
+      "name": "计划",
+      "font_class": "jihua",
+      "unicode": "e8f6",
+      "unicode_decimal": 59638
+    },
+    {
+      "icon_id": "33734075",
+      "name": "录带看",
+      "font_class": "ludaikan",
+      "unicode": "e8f7",
+      "unicode_decimal": 59639
+    }
+  ]
+}
