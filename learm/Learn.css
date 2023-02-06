@@ -35,7 +35,7 @@
 body>div {
     float: left;
     width: 250px;
-    height: 250px;
+    height: 280px;
     margin: 10px;
     padding: 15px;
     font-size: 15px;
@@ -685,4 +685,143 @@ table td {
     border-width: 30px 15px 0 0;
     border-color: transparent red transparent transparent;
     border-style: solid;
+}
+
+.demo26 form input::placeholder {
+    color: blue;
+}
+
+.demo27 p[class^=prev] {
+    color: pink;
+}
+.demo27 p[class$=icon] {
+    color: blue;
+}
+.demo27 p[class*=last] {
+    color: red;
+}
+.demo28 ul li:first-child {
+    background-color: blue;
+}
+.demo28 ul li:last-child {
+    background-color: red;
+}
+.demo28 ul li:nth-child(3) {
+    background-color: pink;
+}
+.demo29 ul li:nth-child(even) {
+    background-color: pink;
+}
+.demo29 ul li:nth-child(odd) {
+    background-color: gray;
+}
+.demo29 ol li:nth-child(n) {
+    background-color: yellow;
+}
+.demo30 div:nth-child(1) {
+    color: pink;
+}
+.demo30 div:nth-of-type(1) {
+    color: blue;
+}
+.demo31 .box1,
+.demo31 .box2 {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.demo31 .box1::before {
+    content: '我';
+    color: blue;
+}
+.demo31 .box1::after {
+    content: '谁';
+    color: red;
+}
+
+.demo31 .box2 {
+    position: relative;
+}
+.demo31 .box2::after {
+    position: absolute;
+    content: '\e601';
+    top: 5px;
+    right: 10px;
+}
+.demo33 .box1,
+.demo33 .box2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 15px;
+}
+.demo33 .box2 {
+    box-sizing: border-box;
+}
+
+.demo34 img {
+    width: 250px;
+    height: 250px;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+.demo34 img:hover {
+    filter: blur(0);
+}
+.demo35 .father {
+    width: 250px;
+    height: 100px;
+    background-color: pink;
+}
+.demo35 .son {
+    width: calc(100% - 50px);
+    height: 50px;
+    background-color: skyblue;
+}
+.demo36 .box {
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+    transition: width .5s ease .5s;
+}
+
+.demo36 .box:hover {
+    width: 250px;
+}
+.demo36 .bar {
+    margin-top: 30px;
+    height: 10px;
+    width: 200px;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 1px;
+}
+.demo36 .bar-in {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.demo36 .bar-in:hover {
+    width: 100%;
+}
+.demo36 .logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.demo36 .logo img {
+    height: 100%;
+    left: 0;
+    transition: all .2s;
+}
+.demo36 .logo img:hover {
+    position: absolute;
+    top: 0;
+    left: -99px;
 }
