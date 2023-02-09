@@ -1,0 +1,146 @@
+.main {
+    height: 455px;
+    margin: 10px 0 0 220px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+.news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news_hd a {
+    float: right;
+}
+.news_hd a::after {
+    content: '\e68c';
+    font-family: 'iconfont';
+}
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    padding: 5px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+.lifeservice ul li {
+    float: left;
+    width: 25%;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+.lifeservice ul li:nth-child(4n) {
+    border-right: 0;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    /* 居中用inline-block */
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -16px -16px;
+}
+.bargain {
+    margin-top: 5px;
+    height: 75px;
+}
+.recom {
+    margin-top: 10px;
+    height: 163px;
+    background-color: 5c5251;
+}
+.recom_hd {
+    float: left;
+    width: 205px;
+    background-color: #5c5251;
+    height: 100%;
+    line-height:163px;
+    text-align: center;
+}
+.recom_bd ul li {
+    float: left;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.tab_hd {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.tab_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.tab_list {
+    float: right;
+}
+.tab_list ul li {
+    float: left;
+}
+.tab_list ul li a {
+    padding: 0 15px;
+}
+.tab_bd {
+    height: 361px;
+}
+.tab_list_items>div {
+    float: left;
+    height: 361px;
+}
+.col_210 {
+    width: 210px;
+    text-align: center;
+    background-color: #fbfbfb;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    display: block;
+    /* a包含有宽度的盒子，需转换块级元素 */
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,115 @@
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    border-left: 1px solid #c81523;
+    padding-left: 14px;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    /* 溢出隐藏 */
+    font-size: 14px;
+    padding: 0 20px;
+}
+.sk_con ul li:last-child a::after {
+    content: '\e601';
+    font-family: 'iconfont';
+}
+.sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
+.sk_phone img {
+    display: block;
+    margin: 20px auto 0;
+    width: 140px;
+    height: 250px;
+}
+.phone_review {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+.phone_price {
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+.phone_price span {
+    color: #eb1224;
+    font-size: 20px;
+    font-weight: 700;
+}
+.phone_price i {
+    font-size: 12px;
+}
+.phone_price del {
+    font-size: 14px;
+    font-weight: 700;
+    color: #b4b4b4;
+}
+.phone_count {
+    padding: 0 15px;
+    font-size: 13px;
+}
+.count_bar {
+    display: inline-block;
+    width: 120px;
+    height: 12px;
+    border: 1px solid #eb1224;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+.phone_count em {
+    color: #eb1224;
+    font-size: 15px;
+}
+.count_bar {
+    margin: 0 5px;
+}
+.bar_in {
+    width: 80%;
+    height: 100%;
+    border-radius: 6px 0 0 7px;
+    background-color: #eb1224;
+    transition: all .7s;
+}
+.bar_in:hover {
+    width: 100%;
+    border-radius: 7px;
+}
+.sk_phone button {
+    height: 55px;
+    width: 100%;
+    background-color: #c81523;
+    color: #fff;
+    font-size: 18px;
+}
