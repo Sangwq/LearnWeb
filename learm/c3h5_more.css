@@ -139,3 +139,111 @@
 .box4:hover {
     animation-play-state: paused;
 }
+.demo05 {
+    position: relative;
+}
+@keyframes w {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+.steps {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: pink;
+    animation: w 1.5s steps(10) 1s infinite;
+}
+@keyframes bear {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1600px 0;
+    }
+}
+@keyframes run {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 150px;
+    }
+}
+.bear {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: url(images/bear.png) no-repeat;
+    background-size: 800px 50px;
+    background-color: pink;
+    animation: run 2s forwards, bear .5s steps(8) infinite;
+}
+.demo06 {
+    perspective: 500px;
+}
+.d4_box1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transform-style: preserve-3d;
+    margin: 20px auto;
+    transform-style: preserve-3d;
+    transform: rotateY(-45deg);
+}
+.box1_pink,
+.box1_purple {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.box1_pink {
+    background-color: pink;
+}
+.box1_purple {
+    background-color: purple;
+    transform: rotateX(60deg);
+}
+
+.d4_box2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    transform-style: preserve-3d;
+    transition: all .2s;
+}
+.d4_box2:hover {
+    transform: rotateY(180deg);
+}
+.box2_pink,
+.box2_purple {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    /* 背向隐藏 */
+    backface-visibility: hidden;
+}
+.box2_pink {
+    background-color: pink;
+}
+.box2_purple {
+    background-color: purple;
+    transform: rotateY(180deg);
+}
