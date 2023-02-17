@@ -22,7 +22,7 @@
         console.log(011);
         十六进制
         console.log(0x11); */
-    /*     类型
+/*         // 类型
         console.log(Number.MAX_VALUE);
         console.log(Number.MIN_VALUE);
         console.log(Number.MAX_VALUE * 2);
@@ -212,7 +212,7 @@
                 console.log('无匹配');
         } */
     // if,switch练习practice
-    /*     var time =parseFloat(prompt('请输入时间'));
+    /*     var time = +(prompt('请输入时间'));
         if (time = 12) {
             alert('中午好');
         } else if (time = 18) {
@@ -225,7 +225,7 @@
         num1 > num2 ? alert(num1) : alert(num2); */
     /*     var num = prompt('number');
         num % 2 == 0 ? alert('偶数') : alert('奇数'); */
-    /*     var num = parseFloat(prompt('number'));
+    /*     var num = +(prompt('number'));
         switch (num) {
             case 1: 
             console.log('星期一');
@@ -248,7 +248,7 @@
             case 7: 
             console.log('星期七');
         } */
-    /*     var money = parseFloat(prompt('money'));
+    /*     var money = +(prompt('money'));
         money >= 2000 ? alert('西餐') : money < 2000 && money >= 1500 ? alert('快餐') : alert('吃屁'); */
     // for循环
     /*     var num = prompt('次数');
@@ -291,13 +291,12 @@
         }
         console.log(sum); */
 
-    // 78.demo
-    /*     var num = prompt('人数');
+/*     // 78.demo
+        var num = prompt('人数');
         var sum = 0;
-        var average = 0;
         for (var i = 1; i <= num; i++) {
-            var score = prompt('输入第'+ i +'次成绩');
-            sum += parseFloat(score);
+            var score = +prompt('输入第'+ i +'次成绩');
+            sum += score;
         }
         console.log('总分是'+ sum);
         console.log('平均分是'+ sum / num); */
@@ -337,12 +336,14 @@
             str = prompt('why not?');
         }
         alert('out'); */
+
     // 90.do while
     /*     var age = 1;
         do {
             console.log(age + '岁了');
             age++
         } while (age <= 100) */
+
     /*     var sum = 0;
         var num = 1;
         do {
@@ -350,10 +351,12 @@
             num++
         } while (num <= 100)
         console.log(sum); */
+
     /*     do {
             var str = prompt('why');
         } while (str != 'right')
         alert('out'); */
+        
     // 92.continue
     /*     for (i = 1; i <= 9; i++) {
             if (i % 3 == 0) {
@@ -370,8 +373,8 @@
                 console.log(i);
             }
         } */
-    // 95.demo 
 
+    // 95.demo 
     /*     do {
             var username = prompt('请输入用户名');
             var password = prompt('请输入密码');
@@ -465,45 +468,363 @@
             arr[i] = i + 1;
         }
         console.log(arr) */
-        
-/*     // 数组筛选
-    var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
-    var newArr = [];
-    var j = 0;
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > 10) {
-            newArr[j] = arr[i];
-            j++
+
+        /* // 数组筛选
+        var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
+        var newArr = [];
+        var j = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                newArr[j] = arr[i];
+                j++
+            }
         }
-    }
-    console.log(newArr) */
-/*     // 数组筛选方法2
-    var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
-    var newArr = [];
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] > 10) {
-            newArr[newArr.length] = arr[i];
+        console.log(newArr) */
+    /*     // 数组筛选方法2
+        var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > 10) {
+                newArr[newArr.length] = arr[i];
+            }
         }
-    }
-    console.log(newArr) */
+        console.log(newArr) */
     // 数组筛选去除元素
-/*     var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
-    var newArr = [];
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] != 0) {
+    /*     var arr = [2, 0, 6, 1, 77, 0, 52, 3, 25, 7];
+        var newArr = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr) */
+
+    /*     // 数组翻转
+        var arr = ['first','second','third'];
+        var newArr = [];
+        for (var i = arr.length - 1; i >= 0; i--) {
             newArr[newArr.length] = arr[i];
         }
-    }
-    console.log(newArr) */
+        console.log(newArr); */
 
-/*     // 数组翻转
-    var arr = ['first','second','third'];
-    var newArr = [];
-    for (var i = arr.length - 1; i >= 0; i--) {
-        newArr[newArr.length] = arr[i];
-    }
-    console.log(newArr); */
+    /*     // 冒泡排序
+        var arr = [2, 1, 3, 5, 4];
+        for (var i = 1; i <= arr.length - 1; i++) {
+            for (var j = 0; j <= arr.length - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr); */
 
+    // 函数调用
+    /*     function setSum(start, end) {
+            var sum = 0;
+            for (var i = start; i <= end; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+        setSum(1, 100); */
+
+    /*     // 形参实参
+        function setSum (start, end) {
+            console.log(start + end);
+        }
+        setSum(1, 2);
+        setSum(1, 2, 3);
+        setSum(1); */
+
+    /*     // 返回值return
+        function getResult(num1, num2) {
+            return num1 + num2;
+        }
+        console.log(getResult(1, 2));
+    
+        function getMax(num1, num2) {
+            return num1 > num2 ? num1 : num2;
+        }
+        console.log(getMax(1, 2)); */
+
+    /*     // return返回数组最大值
+        function getArrMax(arr) {
+            var max = arr[0];
+            for (var i = 1; i <= arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        var result = getArrMax([1, 2, 3, 4]);
+        console.log(result); */
+
+    /*     // return返回值
+        function getSum(num1, num2) {
+            return num1, num2;
+            // 返回最后一个值
+            alert('');
+            // 不执行后面代码
+        }
+        var re = getSum(1, 2);
+        console.log(re); */
+    /*     // return多个值
+        function getRe(num1, num2) {
+            return [num1 + num2, num1 * num2, num1 / num2];
+        }
+        var re = getRe(1, 2);
+        console.log(re); */
+
+    /*     // 内置函数arguments
+        function fun() {
+            for (var i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+        fun(1, 2, 3); */
+
+    /*     // arguments求最大值
+        function getMax() {
+            var max = arguments[0];
+            for (var i = 1; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        var num = getMax(1, 2, 3, 4);
+        console.log(num); */
+
+    /*     // 函数翻转内容
+        function reverse(arr) {
+            var newArr = [];
+            for (var i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i];
+            }
+            return newArr;
+        }
+        var re = reverse([1, 2, 3, 4]);
+        console.log(re); */
+
+    /*     // 函数冒泡排序
+        function sort(arr) {
+            for (var i = 1; i < arr.length - 1; i++) {
+                for (var j = 0; j < arr.length - i; j++) {
+                    var temp = arr[j];
+                    if (arr[j] > arr[j + 1]) {
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        var arr1 = sort([2,1,3,4]);
+        console.log(arr1); */
+
+    /*     // 函数判断闰年
+        function backDay() {
+            var year = prompt('请输入年份');
+            if (isRunYear(year)) {
+                alert('闰年2月29天');
+            } else {
+                alert('平年2月份28天');
+            }
+        }
+        backDay();
+        function isRunYear(year) {
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            }
+            return flag;
+        } */
+
+    /*     // 匿名函数
+        var fun = function(str) {
+            console.log(str);
+        }
+        fun('这是一个匿名函数'); */
+
+    /*     // 作用域链,就近原则
+        function fun1() {
+            var num = 1;
+            function fun2() {
+                var num = 2;
+                console.log(num);
+            }
+            fun2();
+        }
+        fun1(); */
+
+    /*     // 预解析
+        console.log(num);
+        var num = 1;
+        // 变量提升
+        var num;
+        console.log(num);
+        num = 1; */
+    /*     // 预解析
+        num();
+        var num = function() {
+            console.log(1);
+        }
+        // 变量提升
+        var num;
+        num();
+        num = function() {
+            console.log(1);
+        } */
+
+    /*     num();
+        function num() {
+            console.log(1);
+        }
+        // 函数提升
+        function num() {
+            console.log(1);
+        }
+        num(); */
+
+    /*     // 预解析demo
+        var num = 10;
+        fun();
+        function fun() {
+            console.log(num);
+            var num = 20;
+            console.log(num);
+        }
+        // 结果undefined,预解析
+        var num;
+        function fun() {
+            var num;
+            console.log(num);
+            var num = 20;
+            console.log(num);
+        }
+        num = 10;
+        fun(); */
+
+    /*     // 预解析demo
+        var a = 18;
+        f1();
+        function f1() {
+            var b = 9;
+            console.log(a);
+            console.log(b);
+            var a = '123';
+        }
+        // 预解析
+        var a;
+        function f1() {
+            var b;
+            var a;
+            b = 9;
+            console.log(a);
+            console.log(b);
+            a = '123'
+        }
+        f1(); */
+
+    /*     // 预解析demo
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+        function f1() {
+            var a = b = c = 9;
+            // 相当于var a = 9; b = 9; c = 9;
+            // 集体声明var a = 9, b = 9, c = 9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        // 预解析
+        function f1() {
+            var a;
+            a = 9;
+            b = 9;
+            c = 9;
+            // b,c 为全局变量
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a); */
+
+/*         // 对象
+        var obj = {
+            name: 'uu',
+            sex: 'man',
+            age: 18,
+            sayHi: function sayHi() {
+                console.log('hi');
+            }
+        }
+        console.log(obj.age, obj.name);
+        console.log(obj['sex']);
+        obj.sayHi(); */
+
+/*     // 变量
+    var num;
+    var obj = {
+        // 属性
+        name: 'uu',
+        // 对象
+        sayHi: function sayHi() {
+            console.log('hi');
+        }
+    }
+    // 函数
+    function fun() {
+        console.log('fun');
+    } */
+
+/*     // 利用new Object创建对象
+    var obj = new Object();
+    obj.name = 'uu';
+    obj.sex = 'man';
+    obj.fun = function() {
+        console.log('hi');
+    }
+    console.log(obj.name);
+    console.log(obj.sex);
+    obj.fun(); */
+
+/*     // 构造函数:泛指
+    function Obj(name, sex) {
+        this.name = name;
+        this.sex = sex;
+        this.sayHi = function(say) {
+            console.log(say);
+        }
+    }
+    // 对象:特指
+    var uu = new Obj('uu', 'man');
+    uu.sayHi('hi');
+    console.log(uu.name);
+    console.log(uu.sex); */
+
+/*     // 遍历对象
+    function Obj(name, sex) {
+        this.name = name;
+        this.sex = sex;
+        this.sayHi = function(say) {
+            console.log(say);
+        }
+    }
+    var uu = new Obj('uu', 'man');
+    for (var k in uu) {
+        console.log(k);
+        console.log(uu[k]);
+    } */
 </script>
 
 <body>
