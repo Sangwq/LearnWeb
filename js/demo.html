@@ -1028,34 +1028,194 @@
             return h + '时' + m + '分' + s + '秒';
         }
         console.log(gitTime()); */
-    
-/*     // 显示毫秒
-    var date = new Date();
-    console.log(date.valueOf());
-    console.log(date.getTime());
-    var date1 = +new Date();
-    console.log(date1);
-    console.log(Date.now()); */
 
-/*     计时器
-    function countDown(time) {
-        var nowTime = +new Date();
-        var inputTime = +new Date(time);
-        var times = (inputTime - nowTime) / 1000;
-        var d = parseInt(times / 60 / 60 / 24);
-        // d = d < 10 ? '0' + d : d;
-        var h = parseInt(times / 60 / 60 % 24);
-        // h = h < 10 ? '0' + h : h;
-        var m = parseInt(times / 60 % 60);
-        // m = m < 10 ? '0' + m : m;
-        var s = parseInt(times % 60);
-        // s = s < 10 ? '0' + s : s;
-        return d + '天' + h + '时' + m + '分' + s + '秒';
+    /*     // 显示毫秒
+        var date = new Date();
+        console.log(date.valueOf());
+        console.log(date.getTime());
+        var date1 = +new Date();
+        console.log(date1);
+        console.log(Date.now()); */
+
+    /*     计时器
+        function countDown(time) {
+            var nowTime = +new Date();
+            var inputTime = +new Date(time);
+            var times = (inputTime - nowTime) / 1000;
+            var d = parseInt(times / 60 / 60 / 24);
+            // d = d < 10 ? '0' + d : d;
+            var h = parseInt(times / 60 / 60 % 24);
+            // h = h < 10 ? '0' + h : h;
+            var m = parseInt(times / 60 % 60);
+            // m = m < 10 ? '0' + m : m;
+            var s = parseInt(times % 60);
+            // s = s < 10 ? '0' + s : s;
+            return d + '天' + h + '时' + m + '分' + s + '秒';
+        }
+        console.log(countDown('2023-9-1 08:08:08'));
+        var date = new Date();
+        console.log(date); */
+
+    // 2_20
+    /*     // 几种创建数组方法
+        var arr1 = [1, 2, 3];
+        console.log(arr1);
+        var arr2 = new Array();
+        console.log(arr2);
+        var arr3 = new Array(2);
+        console.log(arr3);
+        var arr4 = new Array(1, 2);
+        console.log(arr4); */
+    /*     // 检查是否为数组
+        function reverse(arr) {
+            // if (arr instanceof Array) {
+            if (Array.isArray(arr)) {
+                var newArr = [];
+                for (var i = arr.length - 1; i >= 0; i--) {
+                    newArr[newArr.length] = arr[i];
+                }
+                return newArr;
+            } else {
+                return '请输入一个数组'
+            }
+        }
+        var re = reverse([1, 2, 3]);
+        console.log(re); */
+
+    /*     // 添加数组元素
+        var arr = [1,2,3];
+        console.log(arr.push(4,'text'));
+        console.log(arr);
+        console.log(arr.unshift(-1,0));
+        console.log(arr);
+        console.log(arr.pop());
+        console.log(arr);
+        console.log(arr.shift());
+        console.log(arr); */
+
+    /*         // 运用push
+        function reverse(arr) {
+            // if (arr instanceof Array) {
+            if (Array.isArray(arr)) {
+                var newArr = [];
+                for (var i = arr.length - 1; i >= 0; i--) {
+                    newArr.push(arr[i]);
+                }
+                return newArr;
+            } else {
+                return '请输入一个数组'
+            }
+        }
+        var re = reverse([1, 2, 3]);
+        console.log(re); */
+
+    /*     // 利用reverse内置方法
+        var arr = [1,2,3,9,8,7,11];
+        var res = arr.reverse();
+        console.log(res);
+        // 利用sort方法
+        res = arr.sort(function(a, b) {
+            return a - b;
+            // return b - a;
+        });
+        console.log(res); */
+
+    /*         // 查看元素序号
+            var arr = ['a', 'b', 'c', 'a', 'b'];
+            console.log(arr.indexOf('b'));
+            console.log(arr.indexOf('b',2));
+            // 查找b，从2开始
+            console.log(arr.lastIndexOf('a'));
+            console.log(arr.lastIndexOf('text')); */
+
+    /*     // 元素去重
+        function unique(arr) {
+            var newArr = [];
+            if (Array.isArray(arr)) {
+                for (var i = 0; i < arr.length; i++) {
+                    if (newArr.indexOf(arr[i]) === -1) {
+                        newArr.push(arr[i]);
+                    }
+                }
+                return newArr;
+            } else {
+                return '请输入数组';
+            }
+        }
+        var res = unique(['a', 'b', 'c', 'a', 'b']);
+        console.log(res); */
+    /* 
+        // 数组转字符串
+        var arr = [1, 2, 3];
+        console.log(arr.toString());
+        console.log(arr.join('-')); */
+    /*     // 切数组
+        var arr = [1, 2, 3, 4, 5];
+        var arr2 = ['red','green'];
+        console.log(arr.slice(1,3));
+        console.log(arr);
+        console.log(arr.splice(1,1));
+        console.log(arr);
+        console.log(arr.concat(arr2)); */
+
+    /*     // 基本包装类型
+        var str = 'text';
+        console.log(str.length);
+        // 简单数据类型转复杂数据类型，就有属性方法
+        var temp = new String('text');
+        str = temp;
+        temp = null;
+        console.log(str.length);   */
+
+    /*     // 依次查找，次数统计
+        var arr = ['red','blue','red','green','pink','red'];
+        var index = arr.indexOf('red');
+        var num = 0;
+        while (index !== -1) {
+            console.log(index);
+            index = arr.indexOf('red',index + 1);
+            num ++;
+        }
+        console.log('red出现次数为' + num); */
+
+/*     // string查找
+    var arr = 'lorem';
+    console.log(arr.charAt(0));
+    console.log(arr.substr(2,2));
+    // 遍历
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr.charAt(i));
     }
-    console.log(countDown('2023-9-1 08:08:08'));
-    var date = new Date();
-    console.log(date); */
+    // l对应Ascill码
+    console.log(arr.charCodeAt(0));
+    // string查找方法2
+    console.log(arr[0]); */
 
+
+/*     // 统计次数最多的字母是
+    var str = 'loremllooo';
+    var o = {};
+    for (var i = 0; i < str.length; i++) {
+        var charts = str.charAt(i);
+        if (o[charts]) {
+            o[charts]++;
+        } else {
+            o[charts] = 1;
+        }
+    }
+    console.log(o);
+
+    var max = 0;
+    var ch = '';
+    for (var k in o) {
+        if (o[k] > max) {
+            max = o[k];
+            ch = k;
+        }
+    }
+    console.log('出现次数最多的是' + ch + '次数是' + max); */
+
+    
 
 </script>
 
