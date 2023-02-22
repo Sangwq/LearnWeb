@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        position: relative;
+        text-align: center;
+        margin: 100px auto;
+    }
+
+    .box img {
+        width: 100px;
+        border: 1px solid #ccc;
+    }
+
+    .box i {
+        position: absolute;
+        top: 0;
+        margin-left: -25px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        color: #f40;
+        border: 1px solid #ccc;
+        border-right: 0;
+        font-style: normal;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <i class="close-btn">x</i>
+        <img src="images/rwm.png" alt="">
+    </div>
+
+    <script>
+        var btn = document.querySelector('.close-btn');
+        var img = document.querySelector('img');
+        btn.onclick = function () {
+            img.style.display = 'none';
+            btn.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

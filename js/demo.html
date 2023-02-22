@@ -1289,14 +1289,20 @@
 </script>
 
 <style>
+    #time {
+        width: 250px;
+        height: 200px;
+        background-color: pink;
+    }
     p {
         height: 20px;
         width: 250px;
         background-color: pink;
         font-size: 15px;
     }
+    
 </style>
-
+    
 <body>
     <div id="time">2023-2-21</div>
     <ol id="o1">
@@ -1305,63 +1311,99 @@
         <li>list3</li>
     </ol>
     <button id="btn">点击事件</button>
+    <button id="btn2">点击事件</button>
+    <input type="text" value="text">
     <p></p>
+    <img src="images/1.png" alt="">
+
 
 
     <script>
         /*         var timer = document.getElementById('time');
-                console.log(timer);
-                console.log(typeof timer);
-                console.dir(timer);//查看属性方法 */
+        console.log(timer);
+        console.log(typeof timer);
+        console.dir(timer);//查看属性方法 */
 
         /*         var t_lis = document.getElementsByTagName('li');
-                console.log(t_lis);
-                for (var i = 0; i < t_lis.length; i++) {
-                    console.log(t_lis[i]);
-                } */
+        console.log(t_lis);
+        for (var i = 0; i < t_lis.length; i++) {
+        console.log(t_lis[i]);
+        } */
 
         /*         var t_lis = document.getElementsByTagName('ol');
-                console.log(t_lis[0].getElementsByTagName('li'));
-        
-                var o_ol = document.getElementById('o1');
-                console.log(o_ol.getElementsByTagName('li')); */
+        console.log(t_lis[0].getElementsByTagName('li'));
 
-        /*         var c_lis = document.getElementsByClassName('list');
-                console.log(c_lis); */
+        var o_ol = document.getElementById('o1');
+        console.log(o_ol.getElementsByTagName('li')); */
+
+/*                 var c_lis = document.getElementsByClassName('list');
+        console.log(c_lis); */
 
         /*         var q_lis = document.querySelector('.list');
-                console.log(q_lis);
-                var q_ol = document.querySelector('#o1');
-                console.log(q_ol);
-        
-                var qa_lis = document.querySelectorAll('.list');
-                console.log(qa_lis); */
+        console.log(q_lis);
+        var q_ol = document.querySelector('#o1');
+        console.log(q_ol);
+
+        var qa_lis = document.querySelectorAll('.list');
+        console.log(qa_lis); */
 
         /*         var body = document.body;
-                console.log(body);
-                var html = document.documentElement;
-                console.log(html); */
+        console.log(body);
+        var html = document.documentElement;
+        console.log(html); */
 
         /*         var btn = document.getElementById('btn');
-                btn.onclick = function () {
-                    alert('hello');
-                } */
+        btn.onclick = function () {
+        alert('hello');
+        } */
 
-/*         var btn = document.getElementById('btn');
+        /*         var btn = document.getElementById('btn');
         var p = document.querySelector('p');
         btn.onclick = function () {
-            p.innerText = getDate();
+        p.innerHTML = getDate();
         }
         function getDate () {
-            var now = new Date();
-            var year = now.getFullYear();
-            var month = now.getMonth() + 1;
-            var date = now.getDate();
-            var day = now.getDay();
-            var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
-            return '当前日期是\t' + year + '年' + month + '月' + date + '日 ' + arr[day];
+        var now = new Date();
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var date = now.getDate();
+        var day = now.getDay();
+        var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+        return '当前日期是\t' + year + '年' + month + '月' + date + '日 ' + arr[day];
         } */
        
+/*         var btn = document.getElementById('btn');
+        var btn2 = document.getElementById('btn2');
+        var img = document.querySelector('img');
+        btn.onclick = function () {
+            img.src = 'images/2.png';
+        }
+        btn2.onclick = function () {
+            img.src = 'images/1.png';
+        } */
+
+/*         var date = new Date();
+        var h = date.getHours();
+        var p = document.querySelector('p');
+        if (h < 12) {
+            p.innerHTML = '上午好';
+        } else if (h < 18) {
+            p.innerHTML = '下午好';
+        } else {
+            p.innerHTML = '晚上好';
+        } */
+
+/*         var btn = document.getElementById('btn');
+        var input = document.querySelector('input');
+        btn.onclick = function () {
+            input.value = '被点击了';
+            this.disabled = true;
+        } */
+
+/*         var div = document.getElementById('time');
+        div.onclick = function () {
+            this.style.backgroundColor = 'purple';
+        } */
     </script>
 </body>
 
