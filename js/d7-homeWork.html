@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* demo2 */
+        .box {
+            position: relative;
+            height: 50px;
+            background-color: skyblue;
+        }
+
+        .mark {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            display: inline-block;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 20px;
+            font-style: normal;
+            color: red;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* demo3 */
+        .nav {
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* demo4 */
+        .demo4 {
+            width: 200px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo1">
+        <input type="text" value="邮箱/ID/手机号" class="inp">
+    </div>
+    <div class="demo2">
+        <div class="box">
+            <i class="mark">x</i>
+        </div>
+    </div>
+    <div class="demo3">
+        <div class="nav">
+            title
+            <ul>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+    </div>
+    <div class="demo4">
+        <button>开关</button>
+    </div>
+    <script>
+        //demo1
+        var inp = document.querySelector('input');
+        inp.onfocus = function () {
+            this.style.outlineColor = 'pink';
+            this.value = '';
+        }
+        inp.onblur = function () {
+            this.value = '邮箱/ID/手机号';
+        }
+        //demo2
+        var box = document.querySelector('.box');
+        var mark = document.querySelector('.mark');
+        mark.onclick = function () {
+            box.style.display = 'none';
+        }
+        //demo3
+        var nav = document.querySelector('.nav');
+        var ul = document.querySelector('ul');
+        nav.onmouseover = function () {
+            ul.style.display = 'none';
+        }
+        nav.onmouseout = function () {
+            ul.style.display = 'block';
+        }
+        //demo4
+        var btn = document.querySelector('button');
+        var body = document.body;
+        var flage = 0;
+        btn.onclick = function () {
+            if (flage === 0) {
+                body.style.backgroundColor = 'black';
+                flage = 1;
+            } else if (flage === 1) {
+                body.style.backgroundColor = 'white';
+                flage = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
