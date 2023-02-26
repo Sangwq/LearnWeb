@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度换肤</title>
+    <style>
+        body {
+            background: url(images/hf1.jpg) no-repeat top center;
+        }
+        ul {
+            text-align: center;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            width: 200px;
+        }
+        li img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="images/hf1.jpg" alt=""></li>
+        <li><img src="images/hf2.jpg" alt=""></li>
+        <li><img src="images/hf3.jpg" alt=""></li>
+        <li><img src="images/hf4.jpg" alt=""></li>
+    </ul>
+    <script>
+        var img = document.querySelectorAll('img');
+        for (var i = 0; i < img.length; i++) {
+            img[i].onclick = function () {
+                document.body.style.backgroundImage = 'url('+ this.src +')';
+            }
+        }
+    </script>
+</body>
+</html>

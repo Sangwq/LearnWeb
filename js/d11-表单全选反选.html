@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: 200px auto;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #000;
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" class="th_inp">
+                </th>
+                <th>head</th>
+                <th>head</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>text</td>
+                <td>text</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var th_inp = document.querySelector('.th_inp');
+        var tb_inp = document.querySelector('tbody').querySelectorAll('input');
+        th_inp.onclick = function () {
+            for (var i = 0; i < tb_inp.length; i++) {
+                tb_inp[i].checked = this.checked;
+            }
+        }
+        for (var i = 0; i < tb_inp.length; i++) {
+            tb_inp[i].onclick = function () {
+                // for (var i = 0; i < tb_inp.length; i++) {
+                //     if (!tb_inp[i].checked) {
+                //         th_inp.checked = this.checked;
+                //     } else {
+                //         th_inp.checked = this.checked;
+                //     }
+                // }
+                var flag = true;
+                for (var i = 0; i < tb_inp.length; i++) {
+                    if (!tb_inp[i].checked) {
+                        flag = false;
+                    }
+                    th_inp.checked = flag;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
