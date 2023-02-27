@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .father {
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .son {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <a href="www.baidu.com">链接</a>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nemo dolore autem eligendi, fuga temporibus numquam quaerat explicabo officia nostrum exercitationem corporis rem maiores nisi ullam commodi unde vero eveniet.</p>
+
+    <script>
+        //event函数对象
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function (event) {
+            console.log(event);
+        })
+        //target属性
+        var ul = document.querySelector('ul');
+        ul.addEventListener('click', function (e) {
+            console.log(e.target);//返回触发的target属性
+            console.log(this);//返回绑定的元素属性
+        })
+        //preventDefault阻止默认事件
+        var a = document.querySelector('a');
+        a.addEventListener('click', function (e) {
+            e.preventDefault();
+        })
+        //stopPropagation阻止冒泡
+        var father = document.querySelector('.father');
+        var son = document.querySelector('.son');
+        son.addEventListener('click', function (e) {
+            alert('冒泡流son');
+            e.stopPropagation();//阻止冒泡
+        }, false)
+        father.addEventListener('click', function () {
+            alert('冒泡流father');
+        }, false)
+        //阻止选择，阻止右键
+        var p = document.querySelector('p');
+        p.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        })
+        p.addEventListener('selectstart', function (e) {
+            e.preventDefault();
+        })
+        //页面坐标
+        document.addEventListener('click', function (e) {
+            console.log(e.clientY);
+            console.log(e.clientX);
+            console.log(e.pageY);
+            console.log(e.pageX);
+        })
+    </script>
+</body>
+
+</html>

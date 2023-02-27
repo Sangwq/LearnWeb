@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1">事件1</button>
+    <button class="btn2">事件2</button>
+
+    <script>
+        var btn1 = document.querySelector('.btn1');
+        var btn2 = document.querySelector('.btn2');
+
+        //传统
+        btn1.onclick = function () {
+            alert('hello');
+        }
+        btn1.onclick = function () {
+            alert('hello word');
+        }
+        //监听器
+        btn2.addEventListener('click', function() {
+            alert('hello');
+        })
+        btn2.addEventListener('click', function() {
+            alert('hello word');
+        })
+    </script>
+</body>
+</html>
