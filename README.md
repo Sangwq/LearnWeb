@@ -4,3 +4,5 @@
 3. sort
 4. instanceof
 5. unique
+6. resize
+7. cuntDown
