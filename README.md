@@ -6,3 +6,5 @@
 5. unique
 6. resize
 7. cuntDown
+8. params
+9. info

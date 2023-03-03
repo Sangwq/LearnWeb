@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度</a>
+    <button class="btn1">前进</button>
+    <button class="btn2">后退</button>
+
+    <script>
+        var btn1 = document.querySelector('.btn1');
+        var btn2 = document.querySelector('.btn2');
+        btn1.addEventListener('click', function() {
+            history.forward();
+        })
+        btn1.addEventListener('click', function() {
+            history.go(1);
+        })
+        // btn2.addEventListener('click', function() {
+        //     history.back();
+        // })
+        // btn1.addEventListener('click', function() {
+        //     history.go(-1);
+        // })
+    </script>
+</body>
+</html>
