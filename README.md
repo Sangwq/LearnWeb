@@ -8,3 +8,4 @@
 7. cuntDown
 8. params
 9. info
+10. device
