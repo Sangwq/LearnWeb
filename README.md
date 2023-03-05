@@ -9,3 +9,5 @@
 8. params
 9. info
 10. device
+11. upload
+12. wrap
