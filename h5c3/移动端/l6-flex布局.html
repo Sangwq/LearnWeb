@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* flex布局 */
+            display: flex;
+
+
+            width: 500px;
+            height: 200px;
+            background-color: pink;
+
+            /* 设置轴方向
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* 设置主轴排列方式
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            平分剩余空间
+            justify-content: space-around;
+            贴两边，再平分剩余空间
+            justify-content: space-between; */
+
+            /* 设置侧轴排列方式
+            align-items: center; */
+
+            /* 子元素是否多行
+            flex-wrap: nowrap;
+            flex-wrap: wrap; */
+            
+            /* 排列和多行连写
+            flex-flow: row wrap; */
+
+        }
+        span {
+            width: 100px;
+            height: 50px;
+            background-color: purple;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>
