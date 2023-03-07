@@ -1,0 +1,28 @@
+@pink: pink;
+@green: green;
+@yellow: yellow;
+@border: 5px + 5;
+@baseFont: 20px;
+html {
+    font-size: @baseFont;
+}
+body {
+    background-color: @yellow;
+}
+
+div {
+    background-color: @pink;
+    height: (100px + 50px) - 50;
+    border: @border solid #ccc;
+    a {
+        color: @green;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: (50rem / @baseFont);
+            height: (50rem / @baseFont);
+            background-color: white;
+        }
+    }
+}

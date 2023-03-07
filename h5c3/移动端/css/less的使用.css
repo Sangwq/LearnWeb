@@ -1,0 +1,21 @@
+html {
+  font-size: 20px;
+}
+body {
+  background-color: yellow;
+}
+div {
+  background-color: pink;
+  height: 100px;
+  border: 10px solid #ccc;
+}
+div a {
+  color: green;
+}
+div a::after {
+  content: '';
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+}
