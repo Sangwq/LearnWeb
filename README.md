@@ -14,4 +14,3 @@
 13. brand       品牌
 14. justify     证明
 15. subnav      子导航
-lorem
